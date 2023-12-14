@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project name="SistDist2dasPruebas" default="default" basedir=".">
+<import file="nbproject/build-impl.xml"/>
+    <!-- Define la ruta al JAR de oSysInfo -->
+    <path id="libs.path">
+        <fileset dir="librerias">
+            <include name="jna-5.13.0.jar"/>
+            <include name="jna-platform-5.13.0.jar"/>
+            <include name="slf4j-api-2.0.9.jar"/>
+            <include name="oshi-core-6.4.8.jar"/>
+        </fileset>
+    </path>
+
+
+
+    <target name="compile">
+        <!-- Otras tareas de compilación -->
+
+        <!-- Ejecuta la tarea oSysInfo -->
+        <systeminfo/>
+    </target>
+</project>
